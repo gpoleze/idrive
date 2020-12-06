@@ -9,7 +9,9 @@ RUN apt-get update && \
     unzip \
     curl \
     libfile-spec-native-perl \
-    python3
+    python3 \
+    vim \
+    iproute2
 
 # Installing idrive
 RUN curl -O https://www.idrivedownloads.com/downloads/linux/download-for-linux/IDriveScripts/IDriveForLinux.zip && \
