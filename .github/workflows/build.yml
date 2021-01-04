@@ -24,8 +24,5 @@ jobs:
         run: |
           docker buildx build --push \
             --tag gpoleze/idrive:latest \
+            --tag gpoleze/idrive:$RELEASE_VERSION \
             --platform linux/amd64,linux/arm/v7,linux/arm64 .
-      - name: build the image
-        run: docker tag gpoleze/idrive gpoleze/idrive:$RELEASE_VERSION
-      - name: Push image
-        run: docker push gpoleze/idrive:$RELEASE_VERSION
