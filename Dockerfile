@@ -21,4 +21,4 @@ RUN curl -O https://www.idrivedownloads.com/downloads/linux/download-for-linux/I
     rmdir -p IDriveForLinux/scripts && \
     chmod a+x *.pl
 
-CMD /bin/bash
+ENTRYPOINT [ "/bin/bash" ]
