@@ -1,2 +1,4 @@
 *.code-workspace
 .DS_STORE
+.idea/
+*.iml
