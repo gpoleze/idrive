@@ -14,7 +14,7 @@ RUN apt-get update && \
     iproute2
 
 # Installing idrive
-RUN curl -O https://www.idrivedownloads.com/downloads/linux/download-for-linux/IDriveScripts/IDriveForLinux.zip && \
+RUN curl -O https://www.idrivedownloads.com/downloads/linux/download-for-linux/IDrive_Scripts/IDriveForLinux.zip && \
     unzip IDriveForLinux.zip && \
     rm IDriveForLinux.zip &&\
     mv -v IDriveForLinux/scripts/* . &&\
